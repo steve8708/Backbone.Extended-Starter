@@ -30,54 +30,51 @@ module.exports = (grunt) ->
     coffee:
       compile:
         files:
-          'backbone.extended.starter.js': [
-            'src/backbone.extended.starter.coffee'
+          'dist/backbone.extensions.compute-properties.js': [
+            'src/backbone.extensions.compute-properties.coffee'
           ]
 
-          'backbone.extensions.compute-properties.js': [
-            'backbone.extensions.compute-properties.coffee'
+          'dist/backbone.extensions.easy-bind.js': [
+            'src/backbone.extensions.easy-bind.coffee'
           ]
 
-          'backbone.extensions.easy-bind.js': [
-            'backbone.extensions.easy-bind.coffee'
+          'dist/backbone.extensions.local-store.js': [
+            'src/backbone.extensions.local-store.coffee'
           ]
 
-          'backbone.extensions.local-store.js': [
-            'backbone.extensions.local-store.coffee'
+          'dist/backbone.extensions.state.js': [
+            'src/backbone.extensions.state.coffee'
           ]
 
-          'backbone.extensions.state.js': [
-            'backbone.extensions.state.coffee'
+          'dist/backbone.extensions.view.bind-attributes.js': [
+            'src/backbone.extensions.view.bind-attributes.coffee'
           ]
 
-          'backbone.extensions.view.bind-attributes.js': [
-            'backbone.extensions.view.bind-attributes.coffee'
+          'dist/backbone.extensions.view.components.js': [
+            'src/backbone.extensions.view.components.coffee'
           ]
 
-          'backbone.extensions.view.components.js': [
-            'backbone.extensions.view.components.coffee'
+          'dist/backbone.extensions.view.inherit.js': [
+            'src/backbone.extensions.view.inherit.coffee'
           ]
 
-          'backbone.extensions.view.inherit.js': [
-            'backbone.extensions.view.inherit.coffee'
+          'dist/backbone.extensions.view.manage.js': [
+            'src/backbone.extensions.view.manage.coffee'
           ]
 
-          'backbone.extensions.view.manage.js': [
-            'backbone.extensions.view.manage.coffee'
+          'dist/backbone.extensions.view.ractive.js': [
+            'src/backbone.extensions.view.ractive.coffee'
           ]
 
-          'backbone.extensions.view.ractive.js': [
-            'backbone.extensions.view.ractive.coffee'
-          ]
-
-          'backbone.extensions.view.map.js': [
-            'backbone.extensions.view.map.coffee'
+          'dist/backbone.extensions.view.map.js': [
+            'src/backbone.extensions.view.map.coffee'
           ]
 
 
     concat:
-      files:
-        'backbone.extended.starter.js': [ 'dist/*.js' ]
+      dist:
+        src: [ 'dist/*.js' ]
+        dest: 'backbone.extended.starter.js'
 
     coffeelint:
       src: [ 'src/**/*.coffee', 'GruntFile.coffee', 'tasks/*.coffee' ]

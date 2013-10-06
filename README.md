@@ -3,6 +3,7 @@
 A set of Backbone extensions to kickstart your Backbone.Extended
 development.
 
+
 ## Compute Properties Plugin
 
 ```coffeescript

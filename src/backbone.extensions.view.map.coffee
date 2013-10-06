@@ -9,4 +9,4 @@ Backbone.extensions.view.map = (view, config) ->
       # FIXME: if key is 'foo.bar' listen for changes on 'foo' too
       @on "parent:change:#{val}", (event, model, value) => @set key, value
 
-  null
+  @

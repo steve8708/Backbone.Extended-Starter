@@ -8,4 +8,4 @@ Backbone.extensions.view.inherit = (view, config) ->
       @set path, @lookup path
       @on "parent:change:#{path}", (event, model, value) => @set path, value
 
-  null
+  @

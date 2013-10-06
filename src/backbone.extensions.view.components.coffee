@@ -9,6 +9,7 @@ components = Backbone.extensions.view.components = (context, config, options) ->
       for attr in el.attributes
         attrs[camelize attr.name] = attr.value
       value.call @, $el, @, attrs
+  @
 
 components.registerComponent = (key, value) ->
   components[key] = value

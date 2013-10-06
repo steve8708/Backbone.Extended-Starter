@@ -25,6 +25,7 @@ Backbone.extensions.view.manage = (context, config, options) ->
         for newEvent in ["child:#{eventName}", "child:#{name}:#{eventName}"
           "firstChild:#{eventName}", "firstChild:#{name}:#{eventName}"]
           parent.trigger newEvent, event, args...
+    @
 
   broadcast: (eventName, args...) ->
     if @children
@@ -45,6 +46,7 @@ Backbone.extensions.view.manage = (context, config, options) ->
             "firstParent:#{eventName}", "firstParent:#{name}:#{eventName}"]
             return if event.propagationStopped
             child.trigger newEvent, event, args...
+    @
 
   destroy: ->
     @trigger 'destroy'

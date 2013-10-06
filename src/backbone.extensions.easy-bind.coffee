@@ -27,11 +27,12 @@ bindEvents = (context) ->
   $document = $ document
 
   eventNamespace = "easyBindEvents-#{ context.cid }"
-  for ctx, val of document: $document, window: $window
+  for ctx, val of ( document: $document, window: $window )
     for key, value of context
       if key.indexOf "on#{ capitalize ctx }" is 0
         eventName = key.substring(ctx.length + 2).toLowerCase()
-        val.on "#{ eventName }.#{ eventNamespace }", value and value.bind context
+        eventBindingName = "#{ eventName }.#{ eventNamespace }"
+        val.on eventBindingName, value and value.bind context
 
   context.on 'destroy', =>
     $window.off eventNamespace
@@ -58,3 +59,4 @@ Backbone.extensions.all.easyBind = (context, config) ->
             else
               selector = dasherize camelSplit.slice 1
               @$el.on "#{ event }.delegateEvents", ".#{ selector }", callback
+  @
