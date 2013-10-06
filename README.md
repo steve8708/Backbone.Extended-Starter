@@ -6,7 +6,7 @@ development.
 
 ## Components Plugin
 
-### Using Components
+#### Using Components
 
 ```html
 <x-view type="foo" foo="bar"></x-view>
@@ -15,7 +15,7 @@ development.
 <x-switch name="bar"></x-switch>
 ```
 
-### Creating Components
+#### Creating Components
 
 ``` coffeescript
 # add child views with simple markup
@@ -45,7 +45,7 @@ Backbone.extensions.components.switch = ($el, attributes) ->
 
 ## View Manager Plugin
 
-### Defining Nestings
+#### Defining Nestings
 
 
 ```coffeescript
@@ -63,7 +63,7 @@ class View extends Backbone.ViewManager
 ```
 
 
-### Event Bubbling, Emitting, and Broadcasting
+#### Event Bubbling, Emitting, and Broadcasting
 
 ```coffeescript
 class MyView extends Backbone.ViewManager
@@ -91,7 +91,7 @@ class MyView extends Backbone.ViewManager
 ```
 
 
-### Event Object
+#### Event Object
 
 ```coffeescript
 # All emitted and broadcasted events inject a first
@@ -114,7 +114,7 @@ class View extends Backbone.ViewManager
       true
 ```
 
-### Accessing View Nesting and Management
+#### Accessing View Nesting and Management
 
 ```coffeescript
 view.children           # => List (evented array) of children
@@ -139,7 +139,7 @@ view.parentViews (view) -> view.
 ```
 
 
-### Child List
+#### Child List
 
 ```coffeescript
 # Or you can always loop through children yourself
@@ -154,7 +154,7 @@ view.children.sortBy (child) -> child.isActive()
 view.children.last()
 ```
 
-### Child List Events
+#### Child List Events
 
 ```coffeescript
 view.children.on 'add', (childView) ->    #  a new child view as added
