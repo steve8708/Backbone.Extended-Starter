@@ -3,6 +3,17 @@
 A set of Backbone extensions to kickstart your Backbone.Extended
 development.
 
+* [Components Plugin](#components-plugin)
+* [View Manager Plugin](#view-manager-plugin)
+* [Compute Properties Plugin](#compute-properties-plugin)
+* [Easy Bind Plugin](#easy-bind-plugin)
+* [Local Store Plugin](#local-store-plugin)
+* [State Plugin](#state-plugin)
+* [Bind Attributes Plugin](#bind-attributes-plugin)
+* [View Property Inherit Plugin](#view-property-inherit-plugin)
+* [View Property Map Plugin](#view-property-map-plugin)
+* [Ractive Plugin](#ractive-plugin)
+
 
 ## Components Plugin
 
