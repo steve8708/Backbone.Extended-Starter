@@ -16,6 +16,7 @@ development.
 
 
 ## Components Plugin
+Add custom web components to your Backbone applications 
 
 #### Using Components
 
@@ -55,6 +56,8 @@ Backbone.extensions.components.switch = ($el, attributes) ->
 ```
 
 ## View Manager Plugin
+
+Elegantly manage your view hierarchy with event bubbling, view querying, and childview management
 
 #### Defining Nestings
 
@@ -175,6 +178,7 @@ view.childre.non 'reset', ->              # children were reset
 
 
 ## Compute Properties Plugin
+Add computed properties to your models
 
 ```coffeescript
 class MyModel extends Backbone.ComputedModel
@@ -212,6 +216,7 @@ myModel.get 'brandList'  # => [ 'nike', 'adidas', 'aesics' ]
 ```
 
 ## Easy Bind Plugin
+Ultra easy event binding 
 
 ```coffeescript
 class Model extends Backbone.EasyBind.Model
@@ -259,35 +264,42 @@ class Collection extends Backbone.EasyBind.Collection
 ```
 
 ## Local Store Plugin
+Sync and persist view state in localStorage
 
 ```coffeescript
 Documentation coming soon...
 ```
 
 ## State Plugin
+Manage states on your backbone objects
 
 ```coffeescript
 Documentation coming soon...
 ```
 
 ## Bind Attributes Plugin
+Bind model attributes to attributes of your views root element
 
 ```coffeescript
 Documentation coming soon...
 ```
 
 ## View Property Inherit Plugin
+Map and inherit properties automatically from parent views
 
 ```coffeescript
 Documentation coming soon...
 ```
 
 ## View Property Map Plugin
+Map and inherit properties automatically from parent views
 
 ```coffeescript
 Documentation coming soon...
 ```
-## Ractive Plugin
+## Live Templates Plugin
+
+Surgical DOM updates as your models change
 
 ```coffeescript
 Documentation coming soon...
